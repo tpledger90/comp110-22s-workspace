@@ -8,8 +8,8 @@ if len(usr_word) != 5:
     exit()
 usr_char: str = input("Enter a single character: ")
 if len(usr_char) != 1:
-        print("Error: Character must be a single character")
-        exit()
+    print("Error: Character must be a single character")
+    exit()
 count: int = 0
 
 print("Searching for " + usr_char + " in " + usr_word)
@@ -33,10 +33,12 @@ if usr_word[4] == usr_char:
 if count == 0:
     print("No instances of " + usr_char + " found in " + usr_word)
 if count == 1:
-    print("1 instance of " + usr_char + " in " + usr_word)
+    print("1 instance of " + usr_char + " found in " + usr_word)
 if count == 2:
-    print("2 instances of " + usr_char + " in " + usr_word)
-
-
-
-
+    print("2 instances of " + usr_char + " found in " + usr_word)
+if count == 3:
+    print("3 instances of " + usr_char + " found in " + usr_word)
+if count == 4:
+    print("4 instances of " + usr_char + " found in " + usr_word)
+if count == 5:
+    print("5 instances of " + usr_char + " found in " + usr_word)
